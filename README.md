@@ -4,17 +4,23 @@ A local demo dashboard for organizing fictional coaching clients, goals, and not
 
 A working, AI-assisted learning project in Yousef Rajabi's junior developer portfolio. The code is intentionally organized around straightforward React components and browser APIs. It is not a claim of client work or production deployment experience.
 
-## Screenshots
+## Screenshot
 
 Screenshots show the optional sample data, not real tasks or clients.
 
-![CoachFlow desktop interface](docs/screenshots/desktop.png)
+![CoachFlow desktop interface](docs/screenshots/live-dashboard.jpg)
 
 <details><summary>Mobile view</summary>
 
 ![CoachFlow mobile interface](docs/screenshots/mobile.png)
 
 </details>
+
+## Live Demo
+
+[Open CoachFlow](https://yousef-coachflow.netlify.app/)
+
+Data stays in localStorage in this browser; use fictional records for the public demo.
 
 ## Features
 
@@ -26,7 +32,7 @@ Screenshots show the optional sample data, not real tasks or clients.
 - Load three explicitly fictional sample clients on demand.
 - Responsive cards, accessible forms, keyboard dialogs, and useful empty states.
 
-## Tech stack
+## Tech Stack
 
 React 19, JavaScript, CSS, Vite, localStorage, and Playwright browser tests.
 
@@ -50,7 +56,7 @@ npx playwright install chromium
 npm test            # run browser behavior tests
 ```
 
-`npm ci` uses the committed lockfile for reproducible installs. CI installs Chromium and runs the build and tests. API tests use deterministic fixtures; they do not depend on TVmaze being available.
+`npm ci` uses the committed lockfile for reproducible installs. CI installs Chromium and runs the build and tests. Browser tests cover client management, validation, and responsive behavior.
 
 ## Project structure
 
@@ -64,7 +70,7 @@ tests/             # browser behavior tests
 docs/LEARNING.md   # guided exercises and code walkthrough
 ```
 
-## What I learned / concepts to practice
+## What I Learned
 
 Component composition, form validation, CRUD operations, selected-record state, computed summaries, and localStorage. See [the learning guide](docs/LEARNING.md) for explanations and rebuild exercises. This describes concepts demonstrated by the implementation, not a claim of independent mastery.
 
@@ -79,10 +85,6 @@ Use fictional records only. This is a browser-local learning app without account
 ## Future improvements
 
 Add dated check-ins and progress history; add export/import; design authentication and a secure backend before considering real client use.
-
-## Live demo
-
-A public demo has not been deployed. Run the app locally with `npm run dev`, or build it and serve `dist/` on a static host. Relative asset paths support a repository subdirectory.
 
 ## Author
 
